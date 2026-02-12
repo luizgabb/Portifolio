@@ -4,11 +4,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
+
   color: #FFFFFF;
+  border-bottom: 1px solid #ffffff33;
 
   max-width: 1920px;
   height: 82px;
-  border-bottom: 1px solid #ffffff33;
 }
 
 img {
@@ -54,6 +55,7 @@ img {
 h1 {
   margin: 0;
   padding: 200, 18, 18;
+
   font-weight: 600;
   font-size: 27px;
 }
@@ -63,8 +65,8 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
   padding: 200px;
+  cursor: pointer;
 
 }
 
@@ -74,8 +76,8 @@ h1 {
   height: 40px;
   align-items: center;
   justify-content: center;
-  border-radius: 13px;
 
+  border-radius: 13px;
   border: 2px solid transparent;
   background-image: linear-gradient(#02081a, #02081a), linear-gradient(90deg, #93B7F1, #003962);
   background-origin: border-box;
