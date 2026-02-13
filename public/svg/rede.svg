@@ -1,0 +1,19 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Círculo externo -->
+    <circle cx="256" cy="256" r="220"></circle>
+
+    <!-- Linha horizontal central -->
+    <line x1="36" y1="256" x2="476" y2="256"></line>
+
+    <!-- Linha vertical central -->
+    <line x1="256" y1="36" x2="256" y2="476"></line>
+
+    <!-- Arcos superiores e inferiores -->
+    <ellipse cx="256" cy="256" rx="220" ry="120"></ellipse>
+    <ellipse cx="256" cy="256" rx="120" ry="220"></ellipse>
+
+  </g>
+</svg>
