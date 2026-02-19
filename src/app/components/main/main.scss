@@ -30,7 +30,7 @@
   & p{
     font-size: 12px;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-indent: 5px;
     line-height: 16px;
 
@@ -45,6 +45,81 @@
   font-size: 72px;
   font-weight: 700;
   letter-spacing: -1px;
-  margin-top: 20;
+
+  margin-top: 31px;
+  margin-bottom: 0px;
 }
 
+.sobre {
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  line-height: 32px;
+  font-weight: 500;
+
+  margin-top: 31px;
+  margin-bottom: 54px;
+
+  transition: opacity 0.2s;
+  opacity: 0.7;
+}
+
+.sobre:hover {
+  opacity: 1;
+}
+
+.proj {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  padding: 10px 40px ;
+
+  border-radius: 13px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#02081a, #02081a), linear-gradient(90deg, #93B7F1, #003962);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.proj:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1233px) {
+  .main {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .local {
+    margin-top: 50px;
+    width: auto;
+    min-width: 160px;
+    padding: 6px 12px;
+  }
+
+  .stack {
+    font-size: clamp(40px, 8vw, 64px);
+    line-height: 1.1;
+  }
+
+  .sobre {
+    font-size: 16px;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .proj {
+    width: auto;
+    min-width: 140px;
+    height: auto;
+    padding: 12px 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
