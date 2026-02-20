@@ -21,6 +21,9 @@ body {
   height: 78%;
   z-index: -1;
 
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+
   background: url("/efects/image.png") no-repeat center center;
   background-size: cover;
 
