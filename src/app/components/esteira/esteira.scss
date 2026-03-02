@@ -125,3 +125,9 @@
     transform: translateX(calc(-50% - 25px));
   }
 }
+
+@media (max-width:1233px) {
+  .slider {
+    max-width: 80%;
+  }
+}
