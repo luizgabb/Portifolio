@@ -1,54 +1,54 @@
 <div class="projects" id="session">
-  <div class="portifolio">
+  <div class="portifolio" data-aos="zoom-out" data-aos-delay="100">
     <p>PORTIFÓLIO</p>
   </div>
-  <h1 class="title">Projetos</h1>
-  <p class="descricao">
+  <h1 class="title" data-aos="fade-left" data-aos-delay="150">Projetos</h1>
+  <p class="descricao" data-aos="fade-left" data-aos-delay="170">
     Projetos desenvolvidos com o objetivo de consolidar conhecimentos teóricos e adquirir
     experiência prática,<br>
     explorando desde a arquitetura de APIs até a criação de interfaces modernas e responsivas.
   </p>
   <img class="luz" src="/png/luz.png" alt="">
   <div class="projects-container">
-    <div class="projects-view">
+    <div class="projects-view" data-aos="zoom-in" data-aos-delay="200">
 
       @if (ProjectActive === 1) {
         <div class="img-2">
           <a href="https://beautiful-khapse-5280bc.netlify.app/" target="_blank">
-            <img  class="p1" src="/png/proj-1-deploy.png" alt="">
+            <img  class="p1" data-aos="zoom-in" data-aos-delay="250" src="/png/proj-1-deploy.png" alt="">
           </a>
           <a href="https://github.com/luizgabb/gerador_certificado-angular" target="_blank">
-            <img class="p15" src="/png/proj-1-code.png" alt="">
+            <img class="p15" data-aos="zoom-in" data-aos-delay="250" src="/png/proj-1-code.png" alt="">
           </a>
         </div>
       }
       @else if (ProjectActive === 2) {
         <a href="https://github.com/luizgabb/email-service" target="_blank">
-          <img class="img-0" src="/png/proj-2-code.png" alt="">
+          <img class="img-0" data-aos="zoom-in" data-aos-delay="250" src="/png/proj-2-code.png" alt="">
         </a>
       }
        @else if (ProjectActive === 3) {
         <div class="img-2">
           <a href="https://desafio-frontend-smartfit-seven.vercel.app/" target="_blank">
-            <img class="p3" src="/png/proj-3-deploy.png" alt="">
+            <img class="p3" data-aos="zoom-in" data-aos-delay="250" src="/png/proj-3-deploy.png" alt="">
           </a>
           <a href="https://github.com/luizgabb/desafio-frontend-smartfit" target="_blank">
-            <img class="p35" src="/png/prof-3-code.png" alt="">
+            <img class="p35" data-aos="zoom-in" data-aos-delay="250" src="/png/prof-3-code.png" alt="">
           </a>
         </div>
       } @else {
         <div class="img-2">
           <a href="https://beautiful-khapse-5280bc.netlify.app/" target="_blank">
-            <img  class="p1" src="/png/proj-1-deploy.png" alt="">
+            <img  class="p1" data-aos="zoom-in" data-aos-delay="250" src="/png/proj-1-deploy.png" alt="">
           </a>
           <a href="https://github.com/luizgabb/gerador_certificado-angular" target="_blank">
-            <img class="p15" src="/png/proj-1-code.png" alt="">
+            <img class="p15" data-aos="zoom-in" data-aos-delay="250" src="/png/proj-1-code.png" alt="">
           </a>
         </div>
       }
     </div>
 
-    <div class="list-projects">
+    <div class="list-projects" data-aos="fade-left" data-aos-delay="300">
       <div class="project-1" (click)=OneProject()>
         <div class="project-icon"> <i class="ph ph-certificate"></i></div>
         <h1 class="project-title">Gerador de Certificados</h1>

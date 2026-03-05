@@ -8,7 +8,7 @@
 
     color: white;
 
-    margin-top: 400px;
+    margin-top: 350px;
     margin-bottom: 100px;
   }
 
@@ -56,18 +56,11 @@
   .descricao {
     font-size: 16px;
     font-weight: 500;
-
+    color: #97a7b4;
     line-height: 32px;
     letter-spacing: -0.5px;
 
     margin-top: 0px;
-
-    transition: opacity 0.2s;
-    opacity: 0.7;
-  }
-
-  .descricao:hover {
-    opacity: 1;
   }
 
   .projects-container {

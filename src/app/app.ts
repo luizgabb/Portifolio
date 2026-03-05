@@ -1,9 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, OnInit, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from "./components/navbar/navbar";
 import { Main } from "./components/main/main";
 import { Projects } from "./components/projects/projects";
 import { Esteira } from "./components/esteira/esteira";
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import { Esteira } from "./components/esteira/esteira";
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
+export class App implements OnInit{
   protected readonly title = signal('Portifolio');
 
   ngOnInit() {
@@ -19,6 +20,10 @@ export class App {
       history.scrollRestoration = 'manual';
     }
     window.scrollTo(0, 0);
+
+    AOS.init({
+    duration: 1000,
+    once: true
+  });
   }
 }
-
