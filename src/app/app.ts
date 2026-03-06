@@ -23,7 +23,7 @@ export class App implements OnInit{
 
     AOS.init({
     duration: 1000,
-    once: true
+    once: true,
   });
   }
 }

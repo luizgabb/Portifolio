@@ -1,13 +1,3 @@
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .tech-section {
   text-align: center;
@@ -22,8 +12,6 @@
   font-weight: 700;
   letter-spacing: 3px;
   }
-
-   animation: fadeInUp 1.5s ease-out forwards;
 }
 
 .stack {
@@ -80,6 +68,17 @@
   &::after {
     right: 0;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 2s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .slide-track {

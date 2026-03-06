@@ -20,4 +20,19 @@ export class Esteira {
     { nome: 'MySql', logo: '/svg/MySQL.svg' },
     { nome: 'Postgres', logo: '/svg/PostgresSQL.svg' },
   ];
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const target = document.querySelector('.reveal');
+    if (target) {
+      observer.observe(target);
+    }
+  }
 }
