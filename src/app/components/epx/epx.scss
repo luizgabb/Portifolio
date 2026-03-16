@@ -37,36 +37,76 @@
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(12px);
 
-
       .e {
         font-size: 12px;
         font-weight: 400;
         letter-spacing: 3px;
         text-indent: 5px;
         line-height: 16px;
-
-
-
-
-
       }
     }
 
+    .local:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
     .desc {
-          color: #97a7b4;
-          font-size: 16px;
-          line-height: 28px;
-          letter-spacing: -0.5px;
-          font-weight: 400;
-          margin: 0;
-        }
+      color: #97a7b4;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.5px;
+      font-weight: 400;
+      margin: 0;
+    }
 
     h1 {
-          font-size: 36px;
-          font-weight: 500;
-          line-height: auto;
-          letter-spacing: -1px;
-          margin: 0;
-        }
+      font-size: 36px;
+      font-weight: 500;
+      line-height: auto;
+      letter-spacing: -1px;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .exp {
+    padding: 0 ;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 5px;              /* GAP BEM CURTO entre imagem e texto */
+    text-align: center;     /* Garante a centralização de todo o texto */
+
+    img {
+      width: 110px;         /* Aumentada um pouco (estava 60px) */
+      height: auto;
+      margin-bottom: 0px;
+    }
+
+    .sec {
+      align-items: center;  /* Centraliza a pílula e os textos internamente */
+      gap: 12px;            /* Espaçamento interno entre os textos reduzido */
+
+      br { display: none; } /* Remove quebras manuais que quebram a centralização */
+
+      .local {
+        margin: 0 auto;     /* Centraliza a pílula de Experiência */
+      }
+
+      h1 {
+        font-size: 22px;    /* Tamanho equilibrado */
+        line-height: 1.2;
+        margin: 0;          /* Remove margens para controlar pelo gap */
+      }
+
+      .desc {
+        font-size: 13px;    /* Texto pequeno e discreto */
+        line-height: 1.4;
+        max-width: 280px;   /* Mantém o texto em um bloco centralizado elegante */
+        margin: 0 auto;
+        color: #8899a6;
+      }
+    }
   }
 }
