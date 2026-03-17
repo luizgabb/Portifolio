@@ -75,35 +75,35 @@
     padding: 0 ;
     flex-direction: column;
     margin-top: 0px;
-    gap: 5px;              /* GAP BEM CURTO entre imagem e texto */
-    text-align: center;     /* Garante a centralização de todo o texto */
+    gap: 5px;
+    text-align: center;
 
     img {
-      width: 110px;         /* Aumentada um pouco (estava 60px) */
+      width: 110px;
       height: auto;
       margin-bottom: 0px;
     }
 
     .sec {
-      align-items: center;  /* Centraliza a pílula e os textos internamente */
-      gap: 12px;            /* Espaçamento interno entre os textos reduzido */
+      align-items: center;
+      gap: 12px;
 
-      br { display: none; } /* Remove quebras manuais que quebram a centralização */
+      br { display: none; }
 
       .local {
-        margin: 0 auto;     /* Centraliza a pílula de Experiência */
+        margin: 0 auto;
       }
 
       h1 {
-        font-size: 22px;    /* Tamanho equilibrado */
+        font-size: 22px;
         line-height: 1.2;
-        margin: 0;          /* Remove margens para controlar pelo gap */
+        margin: 0;
       }
 
       .desc {
-        font-size: 13px;    /* Texto pequeno e discreto */
+        font-size: 13px;
         line-height: 1.4;
-        max-width: 280px;   /* Mantém o texto em um bloco centralizado elegante */
+        max-width: 280px;
         margin: 0 auto;
         color: #8899a6;
       }
