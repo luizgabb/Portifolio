@@ -1,0 +1,250 @@
+$bg-gradient-start: #0a0812;
+$bg-gradient-end: #1a1636;
+$text-primary: #ffffff;
+$text-secondary: #a0a0b0;
+$glass-bg: rgba(255, 255, 255, 0.03);
+$glass-border: rgba(255, 255, 255, 0.08);
+
+.projects-view {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  width: 1140px;
+  height: auto;
+  border-radius: 12px;
+  border: solid 1px rgba(255, 255, 255, 0.103);
+  justify-content: space-between;
+  margin-top: 41px;
+  margin: 0 auto;
+
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.041) 0%,
+      rgba(255, 255, 255, 0.041) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.content-section {
+  flex: 1;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+
+  .icon-wrapper {
+    background: #ffffff;
+    color: #000;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  h2 {
+    color: $text-primary;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.timeline-line {
+  position: absolute;
+  left: 14px;
+  top: 40px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0 0 0 45px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    .check-icon {
+      background: rgba(255, 255, 255, 0.2);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    p {
+      color: $text-secondary;
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.ph-certificate {
+  color: white;
+  font-size: 30px;
+}
+
+.illustration-section {
+  flex: 1;
+  position: relative;
+  min-height: 300px;
+  margin-top: 40px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.glass-card {
+  position: absolute;
+  background: $glass-bg;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid $glass-border;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-back {
+  width: 80%;
+  height: 200px;
+  right: 0;
+  top: -20px;
+  background: rgba(255, 255, 255, 0.02);
+  transform: translateX(10px);
+}
+
+.card-front {
+  width: 85%;
+  height: 220px;
+  right: 20px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 2;
+
+  .skeleton-line {
+    background: rgba(255, 255, 255, 0.8);
+    height: 12px;
+    border-radius: 6px;
+    opacity: 0.9;
+
+    &.short {
+      width: 50%;
+      background: #d0d5fc;
+      height: 16px;
+      margin-bottom: 20px;
+    }
+
+    &.long {
+      width: 90%;
+      background: #c0c6e8;
+      opacity: 0.5;
+    }
+
+    &.medium {
+      width: 70%;
+      background: #c0c6e8;
+      opacity: 0.5;
+    }
+  }
+}
+
+.floating-icon {
+  position: absolute;
+  background: rgba(10, 8, 20, 0.6);
+  padding: 10px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+
+  .inner-square {
+    background: #151326;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+.gallery-icon {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ai-icon {
+  right: 10px;
+  bottom: -20px;
+
+  .ai-text {
+    color: #25a55f;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+}
+
+.floating-button {
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  z-index: 4;
+
+  .btn-delete {
+    background: #f05a5a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(240, 90, 90, 0.3);
+  }
+
+  .cursor {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+}

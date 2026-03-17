@@ -5,10 +5,11 @@ import { Projects } from "./components/projects/projects";
 import { Esteira } from "./components/esteira/esteira";
 import * as AOS from 'aos';
 import { Epx } from "./components/epx/epx";
+import { Educ } from "./components/educ/educ";
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Main, Projects, Esteira, Epx],
+  imports: [Navbar, Main, Projects, Esteira, Epx, Educ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
