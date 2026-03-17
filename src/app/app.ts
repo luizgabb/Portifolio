@@ -1,5 +1,4 @@
-import { Component, signal, OnInit, AfterViewInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, signal, OnInit} from '@angular/core';
 import { Navbar } from "./components/navbar/navbar";
 import { Main } from "./components/main/main";
 import { Projects } from "./components/projects/projects";
@@ -9,7 +8,7 @@ import { Epx } from "./components/epx/epx";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Main, Projects, Esteira, Epx],
+  imports: [Navbar, Main, Projects, Esteira, Epx],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
