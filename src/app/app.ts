@@ -6,10 +6,11 @@ import { Esteira } from "./components/esteira/esteira";
 import * as AOS from 'aos';
 import { Epx } from "./components/epx/epx";
 import { Educ } from "./components/educ/educ";
+import { Footer } from "./components/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Main, Projects, Esteira, Epx, Educ],
+  imports: [Navbar, Main, Projects, Esteira, Epx, Educ, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

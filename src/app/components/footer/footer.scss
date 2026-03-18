@@ -1,0 +1,24 @@
+.footer {
+  margin-top: 200px;
+  width: 100%;
+  background-color: white;
+  margin-right: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1,p {
+  color: #02081a;
+}
