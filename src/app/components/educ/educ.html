@@ -1,41 +1,47 @@
-<div class="projects-view">
-  <div class="content-section">
-    <div class="header">
-      <div class="icon-wrapper">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
-      </div>
-      <h2>Protect Personal information</h2>
-    </div>
-
-    <div class="timeline-line"></div>
-
-    <ul class="feature-list">
-      @for (feature of features; track feature) {
-        <li>
-          <div class="check-icon">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-          <p>{{ feature }}</p>
-        </li>
-      }
-    </ul>
+<div class="container">
+  <div class="educ" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
+    <p class="e">EDUCAÇÃO</p>
   </div>
 
-  <div class="illustration-section">
-    <div class="glass-card card-front">
-      <div class="skeleton-line short"></div>
-      <div class="skeleton-line long"></div>
-      <div class="skeleton-line long"></div>
-      <div class="skeleton-line medium"></div>
+  <div class="projects-view">
+    <div class="content-section">
+      <div class="header">
+        <div class="icon-wrapper" data-aos="fade-down" data-aos-delay="300" data-aos-duration="600">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+        <h2 data-aos="fade-right" data-aos-delay="400" data-aos-duration="700">Cursos e Certificados</h2>
+      </div>
+
+      <div class="timeline-line" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000"></div>
+
+      <ul class="feature-list">
+        @for (feature of features; track feature; let i = $index) {
+          <li data-aos="fade-right" [attr.data-aos-delay]="600 + (i * 100)" data-aos-duration="600">
+            <div class="check-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <p>{{ feature }}</p>
+          </li>
+        }
+      </ul>
     </div>
 
-    <div class="floating-icon ai-icon">
-      <div class="inner-square">
-        <i class="ph ph-certificate"></i>
+    <div class="illustration-section" data-aos="zoom-in-left" data-aos-delay="1000" data-aos-duration="800">
+      <div class="glass-card card-front">
+        <div class="skeleton-line short"></div>
+        <div class="skeleton-line long"></div>
+        <div class="skeleton-line long"></div>
+        <div class="skeleton-line medium"></div>
+      </div>
+
+      <div class="floating-icon ai-icon" data-aos="fade-up" data-aos-delay="1300">
+        <div class="inner-square">
+          <i class="ph ph-certificate"></i>
+        </div>
       </div>
     </div>
   </div>
