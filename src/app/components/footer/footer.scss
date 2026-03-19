@@ -1,9 +1,10 @@
 .footer {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
   background-color: white;
-  margin-right: 0;
+  margin-right: 0px;
   padding: 0;
+  height: 60px;
 
   display: flex;
   flex-direction: row;
@@ -17,8 +18,51 @@
   gap: 20px;
   align-items: center;
   justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 h1,p {
   color: #02081a;
+}
+.github, .linkedin {
+  width: 30px;
+  color: #02081a;
+}
+
+.icons {
+  gap: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.linkedin {
+  cursor: pointer;
+} 
+
+.linkedin:hover {
+  transform: scale(1.05);
+}
+
+.linkedin:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 700px){
+  .icons {
+    gap: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
 }
