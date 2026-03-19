@@ -1,13 +1,13 @@
 .exp {
-  margin-top: 200px;
-  margin-bottom: 400px;
   display: flex;
   justify-content: center;
-  color: white;
-  gap: 200px;
   flex-direction: row;
   align-items: center;
   width: 100%;
+  gap: 200px;
+  margin-top: 200px;
+  margin-bottom: 400px;
+  color: white;
 
   img {
     width: 408px;
