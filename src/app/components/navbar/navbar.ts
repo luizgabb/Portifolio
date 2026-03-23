@@ -26,4 +26,41 @@ export class Navbar {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  scrollToSobre() {
+    const element = document.getElementById('sobre');
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+  scrollToProjects() {
+    const element = document.getElementById('session');
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+  scrollToTecnologias() {
+    const element = document.getElementById('tec');
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+  scrollToEducacao() {
+    const element = document.getElementById('educ');
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
 }
