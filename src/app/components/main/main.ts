@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -15,5 +15,11 @@ export class Main {
         block: 'start'
       });
     }
+  }
+
+   @Output() navigate = new EventEmitter<number>();
+
+  goTo(index: number) {
+    this.navigate.emit(index);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, signal, OnInit} from '@angular/core';
+import { Component, signal, OnInit, HostListener} from '@angular/core';
 import { Navbar } from "./components/navbar/navbar";
 import { Main } from "./components/main/main";
 import { Projects } from "./components/projects/projects";
@@ -28,4 +28,45 @@ export class App implements OnInit{
     once: true,
   });
   }
+
+  currentIndex = 0;
+  totalSections = 5;
+  isScrolling = false;
+
+  onWheel(event: WheelEvent) {
+
+    if (this.isScrolling) return;
+
+    if (event.deltaY > 0) {
+      if (this.currentIndex < this.totalSections - 1) {
+        this.currentIndex++;
+        this.scrollToCurrent();
+      }
+    } else if (event.deltaY < 0) {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+        this.scrollToCurrent();
+      }
+    }
+  }
+
+  scrollToCurrent() {
+    this.isScrolling = true;
+
+    const targetId = `section-${this.currentIndex}`;
+    const element = document.getElementById(targetId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    setTimeout(() => {
+      this.isScrolling = false;
+    }, 500);
+  }
+
+  onSectionSelected(index: number) {
+  this.currentIndex = index;
+  this.scrollToCurrent();
+}
 }

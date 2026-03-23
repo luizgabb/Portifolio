@@ -1,6 +1,6 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { AsyncPipe } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { map, Observable, share, shareReplay } from 'rxjs';
 
@@ -27,7 +27,7 @@ export class Navbar {
   }
 
   scrollToSobre() {
-    const element = document.getElementById('sobre');
+    const element = document.getElementById('section-0');
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
@@ -36,7 +36,7 @@ export class Navbar {
     }
   }
   scrollToProjects() {
-    const element = document.getElementById('session');
+    const element = document.getElementById('section-1');
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
@@ -45,7 +45,7 @@ export class Navbar {
     }
   }
   scrollToTecnologias() {
-    const element = document.getElementById('tec');
+    const element = document.getElementById('section-2');
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
@@ -54,13 +54,19 @@ export class Navbar {
     }
   }
   scrollToEducacao() {
-    const element = document.getElementById('educ');
+    const element = document.getElementById('section-3');
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
     }
+  }
+
+  @Output() navigate = new EventEmitter<number>();
+
+  goTo(index: number) {
+    this.navigate.emit(index);
   }
 
 }

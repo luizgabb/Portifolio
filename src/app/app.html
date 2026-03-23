@@ -1,12 +1,12 @@
 <div class="body">
   <div class="bg-animation"></div>
-  <div class="content">
-    <app-navbar></app-navbar>
-    <app-main></app-main>
-    <app-projects></app-projects>
-    <app-esteira></app-esteira>
+  <div class="content" (wheel)="onWheel($event)">
+    <app-navbar (navigate)="onSectionSelected($event)"></app-navbar>
+    <app-main id="section-0" class="section" (navigate)="onSectionSelected($event)"></app-main>
+    <app-projects id="section-1" class="section"></app-projects>
+    <app-esteira id="section-2" class="section"></app-esteira>
     <app-epx></app-epx>
-    <app-educ></app-educ>
+    <app-educ id="section-3" class="section"></app-educ>
     <app-footer></app-footer>
   </div>
 </div>
