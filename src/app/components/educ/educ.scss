@@ -6,12 +6,12 @@ $glass-bg: rgba(255, 255, 255, 0.03);
 $glass-border: rgba(255, 255, 255, 0.08);
 
 .container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 30px;
-width: 1140px;
-margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .projects-view {
@@ -33,6 +33,7 @@ margin: 0 auto;
   -webkit-backdrop-filter: blur(12px);
 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
@@ -41,33 +42,38 @@ margin: 0 auto;
 }
 
 .educ {
-    width: 190px;
-    height: 18px;
-    margin-top: 200px;
-    margin-bottom: 14px;
-    margin: 0 auto;
-    margin-left: 0;
+  width: 190px;
+  height: 18px;
+  margin-top: 200px;
+  margin-bottom: 14px;
+  margin: 0 auto;
+  margin-left: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 10px;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  gap: 10px;
 
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 53px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 53px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
 
-    & .e {
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 3px;
-      text-indent: 5px;
-      line-height: 16px;
-      color: white;
-    }
+  & .e {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-indent: 5px;
+    line-height: 16px;
+    color: white;
   }
+}
+
+.educ:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 .content-section {
   flex: 1;
@@ -81,6 +87,7 @@ margin: 0 auto;
   margin-bottom: 30px;
   position: relative;
   z-index: 2;
+
   .icon-wrapper {
     background: #ffffff;
     color: #000;
@@ -286,6 +293,7 @@ margin: 0 auto;
 }
 
 @media (max-width: 768px) {
+
   .container,
   .projects-view {
     width: 100% !important;
@@ -305,7 +313,7 @@ margin: 0 auto;
     margin: 0 0 20px 0 !important;
     width: auto;
     display: inline-flex;
-    align-self:center;
+    align-self: center;
   }
 
   .illustration-section {
@@ -318,7 +326,10 @@ margin: 0 auto;
 
     .header {
       gap: 12px;
-      h2 { font-size: 19px; }
+
+      h2 {
+        font-size: 19px;
+      }
     }
 
     .feature-list {
