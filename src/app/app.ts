@@ -29,6 +29,12 @@ export class App implements OnInit{
   });
   }
 
+  ngAfterViewInit() {
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
+  }
+
   currentIndex = 0;
   totalSections = 5;
   isScrolling = false;
