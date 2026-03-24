@@ -37,9 +37,13 @@ Para rodar este projeto localmente, siga os passos abaixo:
    ```bash
    git clone [https://github.com/seu-usuario/seu-portfolio.git](https://github.com/seu-usuario/seu-portfolio.git)
 
-## Development server
+2. **Instale as dependências:**
+   ```bash
+   npm install
 
-To start a local development server, run:
+## Rode localmente
+
+Para rodar o projeto localmente escreva no terminal:
 
 ```bash
 ng serve
