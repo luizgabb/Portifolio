@@ -9,6 +9,8 @@
 
 > Este é o meu portfólio pessoal desenvolvido com **Angular**. Aqui apresento meus projetos, habilidades e trajetória como desenvolvedor(a).
 
+> [Link do Deploy] (https://portifolio-three-zeta-40.vercel.app/)
+
 ---
 
 ## 🎨 Preview
