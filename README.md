@@ -14,7 +14,7 @@
 ## 🎨 Preview
 
 
-![Screenshot do Projeto]()
+![Screenshot do Projeto](./Captura de tela 2026-03-24 134629.png)
 
 ---
 
