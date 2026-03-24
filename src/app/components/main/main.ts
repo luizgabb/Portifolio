@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, afterNextRender } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-main',
@@ -21,5 +22,20 @@ export class Main {
 
   goTo(index: number) {
     this.navigate.emit(index);
+  }
+
+  constructor() {
+    afterNextRender(() => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        mirror: false,
+        disable: 'mobile'
+      });
+
+      setTimeout(() => {
+        AOS.refreshHard();
+      }, 100);
+    });
   }
 }
